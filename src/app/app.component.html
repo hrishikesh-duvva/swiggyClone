@@ -1,0 +1,12 @@
+<app-navbar></app-navbar>
+
+<div class="container mx-auto my-4 " *ngIf="!isMenuRoute">
+  <app-food-list></app-food-list>
+</div>
+
+<div class="container mx-auto my-8" *ngIf="!isMenuRoute">
+  <app-restaurant-list></app-restaurant-list>
+</div>
+<div *ngIf="!isMenuRoute"><app-footer></app-footer></div>
+
+<router-outlet />

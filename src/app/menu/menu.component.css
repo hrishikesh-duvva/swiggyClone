@@ -1,0 +1,152 @@
+.restaurant-container {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    padding: 20px;
+    background-color: #f7f7f7;
+  }
+  
+  .restaurant-info {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .restaurant-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .restaurant-details {
+    flex: 1;
+  }
+  
+  .restaurant-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #2f2f2f;
+  }
+  
+  .restaurant-cuisine,
+  .restaurant-location {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .rating {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #f39c12;
+  }
+  
+  .rating-value {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  .offer {
+    background-color: #088604;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .menu {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .menu-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .menu-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .menu-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  }
+  
+  .item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .item-name {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .item-rating {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #f39c12;
+  }
+  
+  .item-description {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  .item-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #27ae60;
+  }
+  
+  .fas {
+    font-size: 18px;
+    color: #f39c12;
+  }
+  
+  /* Add to Cart Button */
+  .add-to-cart-btn {
+    background-color: #de8014; /* Soft red-orange color */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .add-to-cart-btn i {
+    margin-left: 8px;
+  }
+  
+  .add-to-cart-btn:hover {
+    background-color: #ed913b; /* Darker red-orange */
+    transform: scale(1.05);
+  }
+  
+  .add-to-cart-btn:active {
+    background-color: #e98017; /* Even darker red-orange for active state */
+  }
+  

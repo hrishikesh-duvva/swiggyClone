@@ -1,0 +1,22 @@
+<div class="signin-overlay">
+    <button class="close-btn" (click)="closeSignin()">X</button>
+    <div class="signin-container">
+      <h2>Login</h2>
+      <p class="signup-link"><a href="#">or create an account</a></p>
+  
+      <div *ngIf="!otpStep" class="input-container">
+        <input type="tel" placeholder="Phone number" [(ngModel)]="phoneNumber" />
+        <button (click)="sendOtp()">Next</button>
+      </div>
+  
+      <div *ngIf="otpStep" class="input-container">
+        <input type="text" placeholder="Enter OTP" [(ngModel)]="otp" />
+        <button (click)="verifyOtp()">Login</button>
+      </div>
+  
+      <p class="terms-privacy">
+        By clicking on Login, I accept the <a href="#">Terms & Conditions</a> & <a href="#">Privacy Policy</a>
+      </p>
+    </div>
+  </div>
+  

@@ -1,0 +1,38 @@
+<div class="relative">
+    <h2 class="text-2xl font-semibold mb-4">Top restaurant chains</h2>
+  
+    <div class="absolute top-2 right-2 flex space-x-2 z-20">
+      <button class="bg-white p-2 rounded-full shadow" (click)="scrollLeft()">
+        <img src="https://www.svgrepo.com/show/357153/left-arrow.svg" alt="Left Arrow" height="16" width="16" />
+      </button>
+      
+  
+      <button class="bg-white p-2 rounded-full shadow" (click)="scrollRight()">
+        <img src="https://www.svgrepo.com/show/357200/right-arrow.svg" alt="Right Arrow" height="16" width="16" />
+      </button>
+    </div>
+  
+    <div class="overflow-x-hidden whitespace-nowrap scroll-smooth restaurant-container" #foodScroll>
+        <div *ngFor="let restaurant of restaurantList" class="inline-block mx-2 w-64 overflow-hidden">
+          <div class="relative rounded-lg overflow-hidden">
+            <img class="w-full h-40 object-cover" [src]="restaurant.img" [alt]="restaurant.name" />
+            <div class="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-white text-center py-1 font-bold text-2xl">
+              {{ restaurant.offerText }}
+            </div>
+          </div>
+          <div class="p-3 bg-white">
+            <h3 class="text-lg font-semibold">{{ restaurant.name }}</h3>
+            <p class="text-sm text-gray-500 inline-flex items-center">
+              {{ restaurant.rating }} • {{ restaurant.deliveryTime }} mins
+            </p>
+            <p class="text-sm">{{ restaurant.cuisine }}</p>
+            <p class="text-xs text-gray-500">{{ restaurant.location }}</p>
+            <button (click)="viewMenu(restaurant.res_id)">View Menu</button>
+          </div>
+        </div>
+      </div>
+
+      
+    
+  </div>
+  

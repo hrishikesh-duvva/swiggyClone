@@ -1,0 +1,106 @@
+.signin-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: -4px 0 15px rgba(0, 0, 0, 0.15);
+    z-index: 2000;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;  /* Change 'right' to 'left' */
+    border: none;
+    background: none;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .close-btn:hover {
+    color: #ff6600;
+  }
+  
+  .signin-container {
+    text-align: center;
+    width: 100%;
+  }
+  
+  .signin-container h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .signup-link a {
+    color: #ff6600;
+    text-decoration: none;
+  }
+  
+  .signup-link a:hover {
+    text-decoration: underline;
+  }
+  
+  .input-container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  input[type="tel"],
+  input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  input[type="tel"]:focus,
+  input[type="text"]:focus {
+    border-color: #ff6600;
+  }
+  
+  button {
+    width: 100%;
+    padding: 15px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* button:hover {
+    background-color: #e65c00;
+  } */
+  
+  .terms-privacy {
+    font-size: 14px;
+    margin-top: 15px;
+    color: #666;
+  }
+  
+  .terms-privacy a {
+    color: #ff6600;
+    text-decoration: none;
+  }
+  
+  .terms-privacy a:hover {
+    text-decoration: underline;
+  }
+  

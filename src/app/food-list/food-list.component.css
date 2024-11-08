@@ -1,0 +1,25 @@
+.food-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 8px 0;
+    scrollbar-width: none; 
+}
+  
+  .food-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .inline-block {
+    flex: 0 0 auto;
+  }
+  
+  .rounded-md {
+    object-fit: cover;
+    transition: transform 0.3s;
+  }
+  
+  .rounded-md:hover {
+    transform: scale(1.05);
+  }
+  

@@ -1,0 +1,35 @@
+<div *ngIf="restaurant" class="restaurant-container">
+    <div class="restaurant-info">
+      <img [src]="restaurant.img" alt="Restaurant Image" class="restaurant-image">
+      <div class="restaurant-details">
+        <h2 class="restaurant-name">{{ restaurant.name }}</h2>
+        <p class="restaurant-cuisine"><strong>Cuisine:</strong> {{ restaurant.cuisine }}</p>
+        <p class="restaurant-location"><strong>Location:</strong> {{ restaurant.location }}</p>
+        <div class="rating">
+          <span class="rating-value">{{ restaurant.rating }}</span>
+          <i class="fas fa-star"></i> 
+        </div>
+        <p><strong>Delivery Time:</strong> {{ restaurant.deliveryTime }} mins</p>
+        <p *ngIf="restaurant.offerText" class="offer"><strong>Offer:</strong> {{ restaurant.offerText }}</p>
+      </div>
+    </div>
+  
+    <div class="menu">
+      <h3 class="menu-title">Menu</h3>
+      <ul class="menu-list">
+        <li *ngFor="let item of menu" class="menu-item">
+          <div class="item-header">
+            <h4 class="item-name">{{ item.name }}</h4>
+            <div class="item-rating">
+              <span class="rating-value">{{ item.rating }}</span>
+              <i class="fas fa-star"></i> 
+            </div>
+          </div>
+          <p class="item-description">{{ item.description }}</p>
+          <p class="item-price">₹{{ item.price }}</p>
+          <button class="add-to-cart-btn" (click)="addToCart(item)">Add to Cart</button> 
+        </li>
+      </ul>
+    </div>
+  </div>
+  

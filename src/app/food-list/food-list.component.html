@@ -1,0 +1,32 @@
+<div class="relative">
+    <h2 class="text-2xl font-semibold mb-4">What's on your mind?</h2>
+  
+    <div class="absolute top-2 right-2 flex space-x-2 z-20">
+      <button class="bg-white p-2 rounded-full shadow" (click)="scrollLeft()">
+        <img src="https://www.svgrepo.com/show/357153/left-arrow.svg" alt="Left Arrow" height="16" width="16" />
+      </button>
+      
+  
+      <button class="bg-white p-2 rounded-full shadow" (click)="scrollRight()">
+        <img src="https://www.svgrepo.com/show/357200/right-arrow.svg" alt="Right Arrow" height="16" width="16" />
+      </button>
+    </div>
+  
+    <div class="overflow-x-auto whitespace-nowrap scroll-smooth food-container" #foodScroll>
+      <div
+        *ngFor="let item of foodItems"
+        class="inline-block mx-2"
+        [style.height.px]="180"
+        [style.width.px]="144"
+      >
+        <img
+          class="rounded-md"
+          [src]="item.img"
+          [alt]="'restaurant curated for ' + item.name"
+          width="144"
+          height="180"
+        />
+      </div>
+    </div>
+  </div>
+  
